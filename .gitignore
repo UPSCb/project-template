@@ -49,3 +49,6 @@ reference/
 singularity
 singularity/
 .nextflow*
+
+# SLURM
+slurm-*.out
