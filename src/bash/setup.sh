@@ -68,7 +68,7 @@ ln -s /mnt/reference .
 # shellcheck disable=SC2046
 proj=$(basename $(realpath .))
 
-[[ -n "${PI}" ]] && [[ -d /mnt/picea/projects/"${PI}" ]] \
+[[ -n "${PI}" ]] && [[ -d /mnt/picea/ada/"${PI}" ]] \
 && [[ ! -d /mnt/picea/projects/"${PI}"/"${proj}" ]] && \
 mkdir -p /mnt/picea/projects/"${PI}"/"${proj}"/raw && \
 ln -s /mnt/picea/projects/"${PI}"/"${proj}" data
