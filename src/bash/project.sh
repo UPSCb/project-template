@@ -64,7 +64,7 @@ shift
 
 PI=${1}
 shift
-[[ $(containsElement ${PI} "${KNOWNPIS[@]}") -eq 1 ]] && abort "Unknown PI"
+[[ $(containsElement "${PI}" "${KNOWNPIS[@]}") -eq 1 ]] && abort "Unknown PI"
 
 PROJECT=${1}
 shift
