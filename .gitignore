@@ -52,3 +52,6 @@ singularity/
 
 # SLURM
 slurm-*.out
+
+# HTML reports
+*.html
