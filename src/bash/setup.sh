@@ -2,7 +2,7 @@
 
 # safe
 set -eu -o pipefail
-set -x
+#set -x
 
 # populate the UPSCb-common
 cd ../.. && git submodule init && git submodule update --remote
@@ -35,13 +35,15 @@ while getopts g:hp: option
 do
         case "$option" in
         g) PI=${OPTARG};;
-        h) usage;;
+        h) HELP=true;;
         p) PIPELINE=${OPTARG};;
-		\?) ## unknown flag
-		usage;;
+        \?) ## unknown flag
+        usage;;
         esac
 done
 shift $((OPTIND - 1))
+
+[[ -n "${HELP}" ]] && usage
 
 # get the command line args (species and version)
 ACCOUNT=
