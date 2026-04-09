@@ -1,0 +1,15 @@
+{
+    "input": "<project>/doc/sample_sheet.csv",
+    "outdir": "data",
+    "fasta": "<reference>/Arabidopsis-thaliana/TAIR10/fasta/genome.fa.gz",
+    "gtf": "<reference>/Arabidopsis-thaliana/ARAPORT11/2024_release/Araport11_October2024.gtf.gz",
+    "transcript_fasta": "<reference>/Arabidopsis-thaliana/ARAPORT11/2024_release/Araport11_cdna_20241007_from_gtf.fasta.gz",
+    "salmon_index": "<reference>/Arabidopsis-thaliana/ARAPORT11/2024_release/Salmon_Index",
+    "remove_ribo_rna": true,
+    "ribo_database_manifest": "<reference>/rRNA/sortmerna/v4.3.4/nextflow/sortmerna_manifest.txt",
+    "sortmerna_index": "<reference>/rRNA/sortmerna/v4.3.4/nextflow/idx",
+    "pseudo_aligner": "salmon",
+    "extra_salmon_quant_args": "--dumpEq --numGibbsSamples 30 --gcBias --seqBias --posBias",
+    "save_non_ribo_reads": true,
+    "skip_alignment": true
+}
