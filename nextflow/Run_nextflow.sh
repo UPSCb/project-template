@@ -6,7 +6,7 @@
 #SBATCH -o nextflow.out
 #SBATCH -e nextflow.err
 
-ml Nextflow/24.04.2
+ml Nextflow/26.04.6
 
 
 nextflow run nf-core/rnaseq -r 3.26.0  \
