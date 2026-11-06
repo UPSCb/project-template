@@ -3,7 +3,9 @@ This is the project template from the Umeå Plant Science Centre Bioinformatics 
 
 ## Important note
 
-Delete the nextflow folder if you are not using nextflow and the Billing_information.md file if this is not a UPSCb facility project
+Delete the nextflow folder if you are not using nextflow and the Billing_information.md file if this is not a UPSCb facility project.
+
+If you are working with the UPSCb reference folder, please indicate the species and the used genome version in genome_version.json
 
 ## Abstract
 
